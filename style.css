@@ -1,0 +1,29 @@
+h1 {
+  text-align: center;
+  color:white;
+}
+
+body {
+  background: #543789;
+}
+
+#bouton{
+  margin: auto;
+  width: 30%;
+  background: rgba(0, 0, 80, 0.3);
+  padding:10px;
+}
+
+#button{
+  display : block;
+  margin: auto;
+}
+
+#meteo{
+   width:40%;
+   text-align: center;
+   margin: auto;
+   background: #ff8;
+   font-size: 18px;
+   margin-top: 40px;
+}
