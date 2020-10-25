@@ -1,3 +1,5 @@
+function askWeather() {
+let ville = document.getElementById("ville").value
 let request = new XMLHttpRequest() ;
 request.onreadystatechange = function() {
     if (this.readyState == 4 && this.status == 200) {
@@ -6,5 +8,5 @@ request.onreadystatechange = function() {
        document.getElementById("meteo").innerHTML = response.current_condition.condition;
     }
 };
-request.open("GET", "https://www.prevision-meteo.ch/services/json/paris", true);
-request.send();
+request.open("GET", "https://www.prevision-meteo.ch/services/json/" + ville, true);
+request.send();} 
